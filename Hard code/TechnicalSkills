@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Maurice Brevis | Junior Software Engineer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo';
+}
+
+/* Style the header */
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 670px; 
+  background: #F4A460;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  width: 80%;
+  height: 670px;
+  background-color: #DEB887; 
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  style="width:128px;height:128px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+	<style>
+	body {
+  background-image: url('IMG_20181204_004044_525.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+	</style>
+	<h1><b>{ MAURICE BREVIS }</b></h1>
+	<h2>junior software engineer</h2>
+</header><br><br><br><br><br><br><br>
+
+<section>
+  <nav>
+    <ul>
+		<h2><a href="Index.html">Profile</a></h2>
+		<h2><a href="TechnicalSkills.html">Technical & Skills </a></h2>
+		<h2><a href="Experience.html">Experience</a></h2>
+		<h2><a href="Education.html">Education</a></h2>
+		<h2><a href="Projects.html">Projects</a></h2>
+		<h2><a href="Gallery.html">Gallery</a></h2>
+		
+    </ul>
+  </nav>
+  
+  <article>
+    <h2><b><u>Technical & Skills</u></b></h2>
+
+			<p><b>Technical</b></p>				
+				<li>Python</li>
+				<li>Java</li>
+				<li>SQL/ MySQL</li>
+				<li>GIT/ GITHub</li>
+			<p>Other</p>
+				<li>JUnit Testing</li>
+				<li>JavaDoc</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Pastel Partner, Express and Pastel Evolution</li>
+				<li>Microsoft Excel/ Word/ PowerPoint</li>
+				<li>Lotus Smart Suite</li><br>
+							
+			<p><b>Skills</b></p>			
+				<li>Strong communication skills</li>
+				<li>Strong collaboration with junior engineers, peers and external partners to achieve common goals</li>
+				<li>Experience in testing, coding and debugging procedures</li>
+				<li>Good written and verbal communication skills in both English and Afrikaans languages</li>
+				<li>Algorithms, logic and object-oriented programming skills</li>
+				<li>Desired experience with Python or Java and SQL</li>
+				<li>0-1 year of pertinent experience in software development.</li>
+			
+  </article>
+</section>
+
+<footer>
+  <h3><a href ="mailto:mobrevis@gmail.com"><img src="Email logo.png" style="width:75px;height:75px;border:0;"></a>
+		<a target = "Facebook" href ="https://www.facebook.com/maurice.brevis"><img src="Facebook Logo.png" style="width:75px;height:75px;border:0;"></a>	
+		<a target = "LinkedIn" href ="http://www.linkedin.com/in/maurice-brevis-47251b33"><img src="LinkedIn Logo.png" style="width:75px;height:75px;border:0;"></a>
+		<a target = "GitHub" href ="https://github.com/MoBrevis"><img src="GitHub Logo.png" style="width:75px;height:75px;border:0;"></a></h3>
+		<h3>Cell:(+27)76 424 0553</h3>
+		<center>This Website is still: <br><img src="undercons.gif" border=0></center>
+</footer>
+
+</body>
+</html>
