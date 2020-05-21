@@ -10,6 +10,20 @@
 <!--this is a link to fonts found on google-->
 <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+/* Make the image fully responsive */
+.carousel-inner img {
+width: 25%;
+height: 15%;
+}
+</style>
+  
+  
+
 <!--this is the inline style that the website is setup in-->
 <style> 
 * {
@@ -94,6 +108,8 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+
 </style>
 </head>
 <body>
@@ -123,6 +139,7 @@ a:active {
 		<h3><a href="Education.html">Education</a></h3>
 		<h3><a href="Projects.html">Projects</a></h3>
 		<h3><a href="Gallery.html">Gallery</a></h3>
+		<h3><a href="Contact.html">Get in Touch</a></h3>
 		
     </ul>
   </nav>
@@ -152,18 +169,55 @@ a:active {
 				<li>Algorithms, logic and object-oriented programming skills</li>
 				<li>Desired experience with Python or Java and SQL</li>
 				<li>0-1 year of pertinent experience in software development.</li>
+
 			
   </article>
 </section>
-<!--links to my social media accounts and my cellphone number-->
 <footer>
-		<a href ="mailto:mobrevis@gmail.com"><img src="Email Logo.png" style="width:75px;height:75px;border:0;"></a>
-		<a target = "Facebook" href ="https://www.facebook.com/maurice.brevis"><img src="Facebook Logo.png" style="width:75px;height:75px;border:0;"></a>	
-		<a target = "LinkedIn" href ="http://www.linkedin.com/in/maurice-brevis-47251b33"><img src="LinkedIn Logo.png" style="width:75px;height:75px;border:0;"></a>
-		<a target = "GitHub" href ="https://github.com/MoBrevis"><img src="GitHub Logo.png" style="width:75px;height:75px;border:0;"></a>
-		<h3>Cell:(+27)76 424 0553</h3>
+
+<div class="container mt-3">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="git-logo.png" alt="git-logo.png" width="200" height="75">
+    </div>
+    <div class="carousel-item">
+      <img src="javaLogo.jpg" alt="javaLogo.jpg" width="200" height="75">
+    </div>
+    <div class="carousel-item">
+      <img src="mysql.png" alt="mysql.png" width="200" height="75">
+    </div>
+	    <div class="carousel-item">
+      <img src="html5-and-css3.png" alt="html5-and-css3.png" width="200" height="75">
+    </div>
+	    <div class="carousel-item">
+      <img src="Junit.jpeg" alt="Junit.jpeg" width="200" height="75">
+    </div>
+	    <div class="carousel-item">
+      <img src="pastel-accounting.jpg" alt="pastel-accounting.jpg" width="200" height="75">
+    </div>
+	    <div class="carousel-item">
+      <img src="python-logo.png" alt="python-logo.png" width="200" height="75">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
 
 </footer>
+
+
 
 </body>
 </html>
