@@ -30,7 +30,7 @@ header {
 nav {
   float: left;
   width: 20%;
-  height: 380px; 
+  height: 650px; 
   background: #F4A460;
   padding: 20px;
 }
@@ -44,7 +44,7 @@ nav ul {
 article {
   float: left;
   width: 80%;
-  height: 380px;
+  height: 650px;
   background-color: #DEB887; 
   padding: 20px;
 }
@@ -137,6 +137,94 @@ a:active {
 				<li><a target = "GitHub"href="https://github.com/MoBrevis/Level1-Task25">A Task Management System in Python</a></li><br>
 				<li><a target = "GitHub"href="https://github.com/MoBrevis/Level1-Task15">A basic game with Pygame in Python</a></li><br>
 				<li><a target = "GitHub"href="https://github.com/MoBrevis/Level1-Task12">A Financial Calculator in Python</a></li><br>
+				
+				
+				<p><b> Give my Villian name generator a go. </b></p>
+				<p>Its based on the posters that "generates" comical/ fantasy names when you combine certain elements. </p>
+				<p> Please enter your birth month as a number, the first lettter of your name, and your favourite colour. </p>
+				<p> Eg: 3 M Blue </p><br>
+				
+<input type="text" id="stdin"/>
+<p id="credits"></p>
+<form id="form">
+  <button id="run">Run</button>
+</form>
+<code id="output"></code>
+
+<script>
+var run = document.getElementById("run");
+
+run.addEventListener("click", function (e) {
+  
+  e.preventDefault();
+  
+  var stdin = document.getElementById("stdin");
+  var form = document.getElementById("form");
+  var credits = document.getElementById("credits");
+  var output = document.getElementById("output");
+  
+  output.innerHTML = "Loading...";
+  
+  console.log(stdin.value);
+  
+  var obj = {};
+  obj["clientId"] = "3debb1faad603638f387eda6b78c29cf";
+  obj["clientSecret"] = "904fbcf626ddc5f46229e3cc1fd781da8fce64e99e6cb99edfbc2e1f62437e43";
+  obj["script"] = "import java.util.HashMap;\r\nimport java.util.Scanner;\r\n\r\npublic class villianNameCreation2 {\r\n\r\n\tpublic static void main(String[] args) {\r\n\t\t\r\n\t\tScanner scan = new Scanner(System.in);\r\n\t\tint bmonth = scan.nextInt();\r\n\t\tString letter = scan.next().toUpperCase();\r\n\t\tString col = scan.next().toUpperCase();\r\n\t\t\r\n\t\tHashMap<Integer, String> bmonths = new HashMap<Integer, String>();\r\n\t\tbmonths.put(1, \"The Chaos\");\r\n\t\tbmonths.put(2, \"The Unstoppable\");\r\n\t\tbmonths.put(3, \"The Emo\");\r\n\t\tbmonths.put(4, \"The Virgin\");\r\n\t\tbmonths.put(5, \"The Ugly\");\r\n\t\tbmonths.put(6, \"The Delicious\");\r\n\t\tbmonths.put(7, \"The Savage\");\r\n\t\tbmonths.put(8, \"The Trecherous\");\r\n\t\tbmonths.put(9, \"The Poison\");\r\n\t\tbmonths.put(10, \"The Closeted\");\r\n\t\tbmonths.put(11, \"The Bloody\");\r\n\t\tbmonths.put(12, \"The Dramatic\");\r\n\t\t\r\n\t\tHashMap<String, String> letters = new HashMap<String, String>();\r\n\t\tletters.put(\"A\", \"Clown\");\r\n\t\tletters.put(\"B\", \"Machine\");\r\n\t\tletters.put(\"C\", \"Vampire\");\r\n\t\tletters.put(\"D\", \"Child\");\r\n\t\tletters.put(\"E\", \"Freak\");\r\n\t\tletters.put(\"F\", \"Ninja\");\r\n\t\tletters.put(\"G\", \"Unicorn\");\r\n\t\tletters.put(\"H\", \"Slayer\");\r\n\t\tletters.put(\"I\", \"Mastermind\");\r\n\t\tletters.put(\"J\", \"Beast\");\r\n\t\tletters.put(\"K\", \"Bottom\");\r\n\t\tletters.put(\"L\", \"Idol\");\r\n\t\tletters.put(\"M\", \"Werewolf\");\r\n\t\tletters.put(\"N\", \"King/ Queen\");\r\n\t\tletters.put(\"O\", \"Troll\");\r\n\t\tletters.put(\"P\", \"Mutant\");\r\n\t\tletters.put(\"Q\", \"Tarantula\");\r\n\t\tletters.put(\"R\", \"Maid/ Butler\");\r\n\t\tletters.put(\"S\", \"Warrior\");\r\n\t\tletters.put(\"T\", \"Glasses Girl/ Guy\");\r\n\t\tletters.put(\"U\", \"Viper\");\r\n\t\tletters.put(\"V\", \"Fan girl/ boy\");\r\n\t\tletters.put(\"W\", \"Daughter/ Son\");\r\n\t\tletters.put(\"X\", \"Ogre\");\r\n\t\tletters.put(\"Y\", \"Mermaid/ Marman\");\r\n\t\tletters.put(\"Z\", \"Princess/ Prince\");\r\n\r\n\t\tHashMap<String, String> cols = new HashMap<String, String>();\r\n\t\tcols.put(\"RED\", \"of the shadows\");\r\n\t\tcols.put(\"PINK\", \"of Hell\");\r\n\t\tcols.put(\"ORANGE\", \"of the West Coast\");\r\n\t\tcols.put(\"PURPLE\", \"of the dead\");\r\n\t\tcols.put(\"YELLOW\", \"of the East Coast\");\r\n\t\tcols.put(\"BLACK\", \"of Narnia\");\r\n\t\tcols.put(\"WHITE\", \"of the ocean\");\r\n\t\tcols.put(\"GREEN\", \"of New Jersey\");\r\n\t\tcols.put(\"BLUE\", \"of Twitter\");\r\n\t\tcols.put(\"CYAN\", \"of the World\");\r\n\t\t\r\n\t\tSystem.out.println(\"Your villian name chosen by destiny is called \" + bmonths.get(bmonth) + \" \" + letters.get(letter) + \" \" + cols.get(col));\r\n\t}\r\n\r\n}";
+  obj["language"] = "java";
+  obj["versionIndex"] = "0";
+  obj["stdin"] = stdin.value;
+  var jsonStr = JSON.stringify(obj);
+  
+  console.log(jsonStr);
+  
+  const proxyurl = "https://cors-anywhere.herokuapp.com/";
+  const url = "https://api.jdoodle.com/v1/execute";
+  fetch(proxyurl + url, {
+    method: 'post',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: jsonStr
+  })
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    console.log(data);
+    var outputStr = data.output;
+    console.log(outputStr);
+    var formattedOutput = outputStr.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    output.innerHTML = formattedOutput;
+  })
+  .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
+  
+  const creditsUrl = "https://api.jdoodle.com/v1/credit-spent";
+  fetch(proxyurl + creditsUrl, {
+    method: 'post',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: jsonStr
+  })
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    console.log(data);
+    var creditsLeft = 200 - data.used;
+    console.log(credits);
+    credits.innerHTML = "Runs left: " + creditsLeft;
+  })
+  .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
+  
+  
+  
+  
+});
+</script>
 			
   </article>
 </section>
